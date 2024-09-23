@@ -1,3 +1,4 @@
+using LojaLivrosAPI.Data;
 using LojaLivrosAPI.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -29,11 +30,11 @@ namespace LojaLivrosAPI.Controllers
         }
 
         [HttpPost]
-        public ActionResult<Pedido> CreatePedido([FromBody] Pedido pedido)
+        public ActionResult<Pedido> CreatePedido([FromBody] Pedido pedido)  //criando pedidos 
         {
             _context.Pedidos.Add(pedido);
             _context.SaveChanges();
-            return CreatedAtAction(nameof(GetPedido), new { id = pedido.PedidoId }, pedido);
+            return CreatedAtAction(nameof(GetPedido), new { id = pedido.PedidoId }, pedido);    //retornando com id
         }
 
         [HttpPut("{id}")]
