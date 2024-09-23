@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\gustavock\\Desktop\\Trabalho\\LojaLivrosAPI\\LojaLivrosAPI.csproj": {}
+    "C:\\_wsgio\\DevSoftwareVisual\\LojaLivrosAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\gustavock\\Desktop\\Trabalho\\LojaLivrosAPI\\LojaLivrosAPI.csproj": {
+    "C:\\_wsgio\\DevSoftwareVisual\\LojaLivrosAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gustavock\\Desktop\\Trabalho\\LojaLivrosAPI\\LojaLivrosAPI.csproj",
+        "projectUniqueName": "C:\\_wsgio\\DevSoftwareVisual\\LojaLivrosAPI.csproj",
         "projectName": "LojaLivrosAPI",
-        "projectPath": "C:\\Users\\gustavock\\Desktop\\Trabalho\\LojaLivrosAPI\\LojaLivrosAPI.csproj",
-        "packagesPath": "C:\\Users\\gustavock\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gustavock\\Desktop\\Trabalho\\LojaLivrosAPI\\obj\\",
+        "projectPath": "C:\\_wsgio\\DevSoftwareVisual\\LojaLivrosAPI.csproj",
+        "packagesPath": "C:\\Users\\rsgio\\.nuget\\packages\\",
+        "outputPath": "C:\\_wsgio\\DevSoftwareVisual\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\gustavock\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\rsgio\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
