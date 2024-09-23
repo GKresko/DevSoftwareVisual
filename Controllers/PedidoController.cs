@@ -22,7 +22,7 @@ namespace LojaLivrosAPI.Controllers
         public ActionResult<IEnumerable<Pedido>> GetPedidos() => _context.Pedidos.Include(p => p.Cliente).ToList();
 
         [HttpGet("{id}")]
-        public ActionResult<Pedido> GetPedido(int id)
+        public ActionResult<Pedido> GetPedido(int id)   //get para retornar os pedidos
         {
             var pedido = _context.Pedidos.Include(p => p.Cliente).FirstOrDefault(p => p.PedidoId == id);
             if (pedido == null) return NotFound();
@@ -38,7 +38,7 @@ namespace LojaLivrosAPI.Controllers
         }
 
         [HttpPut("{id}")]
-        public IActionResult UpdatePedido(int id, Pedido pedido)
+        public IActionResult UpdatePedido(int id, Pedido pedido)    //para atualizar o pedido
         {
             if (id != pedido.PedidoId) return BadRequest();
             _context.Entry(pedido).State = EntityState.Modified;
@@ -47,7 +47,7 @@ namespace LojaLivrosAPI.Controllers
         }
 
         [HttpDelete("{id}")]
-        public IActionResult DeletePedido(int id)
+        public IActionResult DeletePedido(int id)   //para deletar o pedido
         {
             var pedido = _context.Pedidos.Find(id);
             if (pedido == null) return NotFound();
