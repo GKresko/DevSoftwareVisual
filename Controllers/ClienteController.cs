@@ -36,6 +36,13 @@ namespace LojaLivrosAPI.Controllers
             return CreatedAtAction(nameof(GetCliente), new { id = cliente.ClienteId }, cliente);
         }
 
-        
+        [HttpPut("{id}")]
+        public IActionResult UpdateCliente(int id, Cliente cliente)
+        {
+            if (id != cliente.ClienteId) return BadRequest();
+            _context.Entry(cliente).State = Microsoft.EntityFrameworkCore.EntityState.Modified;
+            _context.SaveChanges();
+            return NoContent();
+        }
     }
 }
