@@ -10,6 +10,22 @@ namespace LojaLivrosAPI.Controllers
     [Route("api/[controller]")]
     public class AutorController : ControllerBase
     {
-        
+        private readonly AppDbContext _context;
+
+        public AutorController(AppDbContext context)
+        {
+            _context = context;
+        }
+
+        [HttpGet]
+        public ActionResult<IEnumerable<Autor>> GetAutores() => _context.Autores.ToList();
+
+        [HttpGet("{id}")]
+        public ActionResult<Autor> GetAutor(int id)
+        {
+            var autor = _context.Autores.Find(id);
+            if (autor == null) return NotFound();
+            return autor;
+        }
     }
 }
