@@ -28,6 +28,14 @@ namespace LojaLivrosAPI.Controllers
             return cliente;
         }
 
-      
+        [HttpPost]
+        public ActionResult<Cliente> CreateCliente([FromBody] Cliente cliente)
+        {
+            _context.Clientes.Add(cliente);
+            _context.SaveChanges();
+            return CreatedAtAction(nameof(GetCliente), new { id = cliente.ClienteId }, cliente);
+        }
+
+        
     }
 }
