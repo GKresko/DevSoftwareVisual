@@ -45,6 +45,14 @@ namespace LojaLivrosAPI.Controllers
             return NoContent();
         }
 
-        
+        [HttpDelete("{id}")]
+        public IActionResult DeleteAutor(int id)
+        {
+            var autor = _context.Autores.Find(id);
+            if (autor == null) return NotFound();
+            _context.Autores.Remove(autor);
+            _context.SaveChanges();
+            return NoContent();
+        }
     }
 }
