@@ -36,6 +36,15 @@ namespace LojaLivrosAPI.Controllers
             return CreatedAtAction(nameof(GetAutor), new { id = autor.AutorId }, autor);
         }
 
+        [HttpPut("{id}")]
+        public IActionResult UpdateAutor(int id, Autor autor)
+        {
+            if (id != autor.AutorId) return BadRequest();
+            _context.Entry(autor).State = Microsoft.EntityFrameworkCore.EntityState.Modified;
+            _context.SaveChanges();
+            return NoContent();
+        }
+
         
     }
 }
