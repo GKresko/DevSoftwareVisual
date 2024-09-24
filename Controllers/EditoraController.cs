@@ -19,7 +19,7 @@ namespace LojaLivrosAPI.Controllers
         // Método HTTP GET para listar todas as editoras no banco de dados
         [HttpGet]
         public ActionResult<IEnumerable<Editora>> GetEditoras() => _context.Editoras.ToList();
-
+        // Método HTTP GET para obter uma editora específica pelo seu ID
         [HttpGet("{id}")]
         public ActionResult<Editora> GetEditora(int id)
         {

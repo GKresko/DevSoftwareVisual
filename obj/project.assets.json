@@ -2716,19 +2716,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\gustavock\\.nuget\\packages\\": {}
+    "C:\\Users\\leona\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\gustavock\\Desktop\\Trabalho\\LojaLivrosAPI\\LojaLivrosAPI.csproj",
+      "projectUniqueName": "C:\\Users\\leona\\DevSoftwareVisual-1\\LojaLivrosAPI.csproj",
       "projectName": "LojaLivrosAPI",
-      "projectPath": "C:\\Users\\gustavock\\Desktop\\Trabalho\\LojaLivrosAPI\\LojaLivrosAPI.csproj",
-      "packagesPath": "C:\\Users\\gustavock\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\gustavock\\Desktop\\Trabalho\\LojaLivrosAPI\\obj\\",
+      "projectPath": "C:\\Users\\leona\\DevSoftwareVisual-1\\LojaLivrosAPI.csproj",
+      "packagesPath": "C:\\Users\\leona\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\leona\\DevSoftwareVisual-1\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\gustavock\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\leona\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
