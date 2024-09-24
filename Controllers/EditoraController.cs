@@ -44,7 +44,7 @@ namespace LojaLivrosAPI.Controllers
             _context.SaveChanges();
             return NoContent();
         }
-
+        // Método HTTP DELETE para remover uma editora pelo seu ID
         [HttpDelete("{id}")]
         public IActionResult DeleteEditora(int id)
         {
