@@ -27,7 +27,7 @@ namespace LojaLivrosAPI.Controllers
             if (editora == null) return NotFound();
             return editora;
         }
-
+        // Método HTTP POST para criar uma nova editora
         [HttpPost]
         public ActionResult<Editora> CreateEditora([FromBody] Editora editora)
         {
@@ -35,7 +35,7 @@ namespace LojaLivrosAPI.Controllers
             _context.SaveChanges();
             return CreatedAtAction(nameof(GetEditora), new { id = editora.EditoraId }, editora);
         }
-
+        // Método HTTP PUT para atualizar uma editora existente
         [HttpPut("{id}")]
         public IActionResult UpdateEditora(int id, Editora editora)
         {
