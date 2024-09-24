@@ -27,5 +27,15 @@ namespace LojaLivrosAPI.Controllers
             if (autor == null) return NotFound();
             return autor;
         }
+
+        [HttpPost]
+        public ActionResult<Autor> CreateAutor([FromBody] Autor autor)
+        {
+            _context.Autores.Add(autor);
+            _context.SaveChanges();
+            return CreatedAtAction(nameof(GetAutor), new { id = autor.AutorId }, autor);
+        }
+
+        
     }
 }
